@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Usage: csrfurl get_url post_url token_name username=blah password=blah
+#
+# Remember to unset HISTFILE for usernames and passwords
+#
+# TODO: support value=token with no quotes.
+
+unset HISTFILE
+
+get_url=$1
+post_url=$2
+token_name=$3
+shift 3
+
+curl="curl -sL --cookie $HOME/.surf/cookies.txt
+               --cookie-jar $HOME/.surf/cookies.txt"
+
+token=$(
+  $curl $get_url |
+    grep -o "<input[^<]*name=[\"\']$token_name[\'\"][^>]*>" |
+    grep -o "value=\S*" |
+    sed -e "s/value=[\'\"]//" -e 's/.$//'
+)
+
+$curl -e $get_url $post_url \
+  -d "$(urlencode $token_name)=$(urlencode $token)" \
+  $@

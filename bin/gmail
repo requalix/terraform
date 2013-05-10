@@ -1,0 +1,3 @@
+#!/bin/bash
+
+TZ='Australia/Sydney' surf -p https://mail.google.com

@@ -18,5 +18,5 @@ Bundle 'kchmck/vim-coffee-script'
 au BufNewFile,BufRead *.md setf markdown
 filetype indent on
 syntax on
+colorscheme koehler
 set bg=dark et ts=2 sts=2 sw=2
-

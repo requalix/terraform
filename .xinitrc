@@ -18,6 +18,6 @@ secs_passed=100
 
 hsetroot -center /usr/share/slim/themes/cosm/background.jpg
 
-# TODO: xbindkeys transset-df and volume keys
+xcompmgr &
 
 exec i3 # -V > log

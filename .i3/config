@@ -19,6 +19,10 @@ font $font
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 
+# Transparency
+bindsym Mod1+Ctrl+Up   exec transset-df --inc 0.05 -a
+bindsym Mod1+Ctrl+Down exec transset-df --dec 0.05 -a
+
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 

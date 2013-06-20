@@ -1,3 +1,0 @@
-#!/bin/bash
-
-echo -n $@ | xxd -plain | tr -d '\n' | sed 's/\(..\)/%\1/g'

@@ -3,3 +3,5 @@
 	name = Jack
 [branch]
 	autosetuprebase = always
+[push]
+	default = simple

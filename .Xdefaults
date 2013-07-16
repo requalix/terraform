@@ -4,3 +4,4 @@ urxvt*scrollBar: false
 xterm*background: black
 xterm*foreground: grey
 xterm*scrollBar: false
+xterm*termName: xterm-256color

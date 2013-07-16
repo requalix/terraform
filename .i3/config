@@ -11,8 +11,8 @@
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-set $font DejaVu Sans Mono
-font $font
+#set $font DejaVu Sans Mono
+#font $font
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
@@ -20,14 +20,17 @@ font $font
 # font pango:DejaVu Sans Mono 10
 
 # Transparency
-bindsym Mod1+Ctrl+Up   exec transset-df --inc 0.05 -a
-bindsym Mod1+Ctrl+Down exec transset-df --dec 0.05 -a
+#bindsym Mod1+Ctrl+Up   exec transset-df --inc 0.05 -a
+#bindsym Mod1+Ctrl+Down exec transset-df --dec 0.05 -a
+
+bindsym XF86AudioRaiseVolume exec amixer set Master playback 1+
+bindsym XF86AudioLowerVolume exec amixer set Master playback 1-
 
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Shift+Return exec i3-sensible-terminal
+bindsym Mod1+Shift+Return exec 
 
 # kill focused window
 bindsym Mod1+Shift+c kill

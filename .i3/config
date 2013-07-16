@@ -30,7 +30,7 @@ bindsym XF86AudioLowerVolume exec amixer set Master playback 1-
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Shift+Return exec 
+bindsym Mod1+Shift+Return exec gnome-terminal
 
 # kill focused window
 bindsym Mod1+Shift+c kill

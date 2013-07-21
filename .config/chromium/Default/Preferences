@@ -1,0 +1,79 @@
+{
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "custom_handlers": {
+      "enabled": false
+   },
+   "default_apps_install_state": 3,
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "plugins": {
+      "enabled_internal_pdf3": true,
+      "enabled_nacl": true,
+      "last_internal_directory": "/usr/lib/chromium",
+      "plugins_list": [ {
+         "enabled": true,
+         "name": "Chromoting Viewer",
+         "path": "internal-remoting-viewer",
+         "version": ""
+      }, {
+         "enabled": false,
+         "name": "Native Client",
+         "path": "/usr/lib/chromium/libppGoogleNaClPluginChrome.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Shockwave Flash",
+         "path": "/usr/lib/mozilla/plugins/libflashplayer.so",
+         "version": "11.2 r202"
+      }, {
+         "enabled": true,
+         "name": "Adobe Flash Player"
+      }, {
+         "enabled": true,
+         "name": "Chromoting Viewer"
+      }, {
+         "enabled": false,
+         "name": "Native Client"
+      } ],
+      "removed_old_component_pepper_flash_settings": true
+   },
+   "profile": {
+      "block_third_party_cookies": true,
+      "content_settings": {
+         "clear_on_exit_migrated": true,
+         "pattern_pairs": {
+            "*,*": {
+               "per_plugin": {
+                  "google-talk": 1
+               }
+            }
+         },
+         "pref_version": 1,
+         "whitelist_version": 1
+      },
+      "created_by_version": "28.0.1500.71",
+      "default_content_settings": {
+         "javascript": 2,
+         "mouselock": 2,
+         "plugins": 3,
+         "ppapi-broker": 2
+      },
+      "is_managed": false,
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
